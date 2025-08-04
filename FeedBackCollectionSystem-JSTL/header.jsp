@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>FeedBack System</title>
 </head>
 <body>
-<hr>
 <div style="background-color: #eee; padding: 10px;">
-  <p>&copy; 2025 College Feedback System</p>
+  <h2>College FeedBack System</h2>
 </div>
+<hr>
 
 </body>
 </html>
