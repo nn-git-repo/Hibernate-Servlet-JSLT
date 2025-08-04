@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/citizen_passport_db</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+
+        <!-- JDBC Connection Pool -->
+        <property name="connection.pool_size">10</property>
+
+        <!-- SQL Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Show SQL Queries in Console -->
+        <property name="show_sql">true</property>
+
+        <!-- Auto-create or Update Tables -->
+        <property name="hbm2ddl.auto">update</property>
+
+        <!-- Entity Mappings -->
+        <mapping class="com.example.entity.Citizen"/>
+        <mapping class="com.example.entity.Passport"/>
+
+    </session-factory>
+</hibernate-configuration>
